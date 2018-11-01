@@ -1,0 +1,304 @@
+<isa>
+<Instruction opcode = "addi">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>int_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "slti">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>int_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "sltiu">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>int_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "andi">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>logi_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "ori">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>logi_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "xori">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>logi_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "slli">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>shift_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "srli">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>shift_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "srai">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>shift_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "lui">
+	<sources>imm20</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>int_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "auipc">
+	<sources>imm20</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>int_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "add">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>int_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "slt">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>int_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "sltu">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>int_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "sub">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>int_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "and">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>logi_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "or">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>logi_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "xor">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>logi_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "sll">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>shift_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "srl">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>shift_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "sra">
+	<sources>reg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>shift_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "jal">
+	<sources>imm20</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>brn_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "jalr">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>brn_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "beq">
+	<sources>reg,reg,imm12</sources>
+	<destinations></destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>brn_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "bne">
+	<sources>reg,reg,imm12</sources>
+	<destinations></destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>brn_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "blt">
+	<sources>reg,reg,imm12</sources>
+	<destinations></destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>brn_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "bltu">
+	<sources>reg,reg,imm12</sources>
+	<destinations></destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>brn_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "bge">
+	<sources>reg,reg,imm12</sources>
+	<destinations></destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>brn_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "bgeu">
+	<sources>reg,reg,imm12</sources>
+	<destinations></destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>brn_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "lw">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>mem_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "lh">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>mem_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "lhu">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>mem_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "lb">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>mem_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "lbu">
+	<sources>reg,imm12</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>mem_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "sw">
+	<sources>reg,reg,imm12</sources>
+	<destinations></destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>mem_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "sh">
+	<sources>reg,reg,imm12</sources>
+	<destinations></destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>mem_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "sb">
+	<sources>reg,reg,imm12</sources>
+	<destinations></destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>mem_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "csrrw">
+	<sources>sysreg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>sys_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "csrrs">
+	<sources>sysreg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>sys_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "csrrc">
+	<sources>sysreg,reg</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>sys_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "csrrwi">
+	<sources>sysreg,imm5</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>sys_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "csrrsi">
+	<sources>sysreg,imm5</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>sys_op</instruction_type>
+	<size>4</size>
+</Instruction>
+<Instruction opcode = "csrrci">
+	<sources>sysreg,imm5</sources>
+	<destinations>reg</destinations>
+	<isa_extension>RV32I</isa_extension>
+	<instruction_type>sys_op</instruction_type>
+	<size>4</size>
+</Instruction>
+</isa>
+

@@ -1,0 +1,47 @@
+Features
+-------------
+1)Random risc-v instruction generator
+2)Easy ability to add new instructions(xml based isa reader)
+3)Cache size aware generation
+4)User-defined snippets
+5)Pages aware generation
+6)ABI compliant
+
+Configurations
+--------------
+1)Extensions
+2)Instruction groups weightage
+3)Forward and backward branch weightage
+
+Random instruction generator
+----------------------------
+1)PC aware instruction generator
+2)Branch direction aware
+
+Front end stress tests
+---------------------
+1)Backward and forward branches
+2)I-Cache set address bits aware branches
+3)Fetch group size aware branches placement
+
+
+
+|---------------|           |--------------------|          |-----------------------------|
+| Configuration | ---->     | Template generator |  ------> | Assembly testcase generator | 
+|---------------|           |--------------------|          |-----------------------------|
+                               ^                                       ^
+|------------------------|     |                    |--------|         |
+| User defined templates |  ----                    | ISA XML|----------
+|------------------------|                          |--------|
+
+
+Assembly testcase generator
+---------------------------
+1)Actual PC aware
+2)Generates actual instructions
+3)Uses pages to place code and data sections
+
+Template generator
+------------------
+1)Control the actual flow of the test scenario
+2)Some minor control over the PC being used 
